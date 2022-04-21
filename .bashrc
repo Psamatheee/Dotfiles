@@ -17,6 +17,13 @@ mcd(){
 
 }
 
+#symlink a moved dotfile
+mvdf(){
+	mv "$1" ~/dotfiles
+	ln -s ~/dotfiles/$1 ~/$1 
+
+}
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth

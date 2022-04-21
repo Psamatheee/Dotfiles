@@ -1,0 +1,7 @@
+[alias]
+	graph = log --all --graph --decorate --oneline	
+[user]
+	email = aa@gmail.com
+	name = julia
+[core]
+	editor = "vim"
