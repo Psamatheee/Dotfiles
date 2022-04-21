@@ -1,13 +1,21 @@
-#~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+#~/.bashrc: executed by bash(1) for non-login shells
 
-alias python=python3
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
 esac
+
+#python alias to recognise python 3
+alias python=python3
+
+#make and cd into directory
+mcd(){
+  mkdir -p "$1"
+  cd "$1"
+
+}
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
